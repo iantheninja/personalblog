@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div id="sidebar">
+    <p class="sign_in">Admin login</p>
+  </div>
+  <div id="main_content">
+    <div id="header">
+      <%= link_to "My Rumblings", posts_path %>
+      <div class="buttons">
+        <div class="button">
+          <%= link_to "New Post", new_post_path %>
+        </div>
+      </div>
+    </div>
+  </div>
 <%= yield %>
 
 </body>
