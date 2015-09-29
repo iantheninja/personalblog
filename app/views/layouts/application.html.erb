@@ -24,8 +24,13 @@
         </button>
       </div> <!--button class ends-->
     </div><!--header ends -->
-  </div><!--button class ends -->
-<%= yield %>
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert") %>
+    <% end %>
+    <%= yield %>
+  </div><!--main content class ends -->
+
 
 </body>
 </html>
