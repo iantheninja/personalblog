@@ -12,14 +12,19 @@
   </div>
   <div id="main_content">
     <div id="header">
-      <%= link_to "My Rumblings", posts_path %>
-      <div class="buttons">
-        <div class="button">
+
+      <%= link_to "My Rumblings", posts_path %> <!-- at the top of the page -->
+
+      <div class="buttons"> <!--for the buttons at the top of page-->
+        <button class="button"> <!-- redirects to new posts page -->
           <%= link_to "New Post", new_post_path %>
-        </div>
-      </div>
-    </div>
-  </div>
+        </button>
+        <button class="button">
+          Log Out
+        </button>
+      </div> <!--button class ends-->
+    </div><!--header ends -->
+  </div><!--button class ends -->
 <%= yield %>
 
 </body>
