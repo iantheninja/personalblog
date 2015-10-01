@@ -11,4 +11,11 @@
   <p class="body">
       <%= @post.body %>
   </p>
+  <div class="comments"><!--shows the number of comments in show page-->
+    <h2><%= @post.comments.count %>Comments</h2> <!--shows number of comments-->
+    <%= render @post.comments %> <!-- displays the comments -->
+
+    <h3>Add a comment:</h3>
+    <%= render "comments/form"%>  <!-- calls the comments form partial-->
+  </div>
 </div>
