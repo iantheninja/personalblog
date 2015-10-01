@@ -10,4 +10,8 @@
       <%= time_ago_in_words(comment.created_at) %> Ago
     </p>
   </div>
+  <p>
+    <%= link_to "Delete Comment", [comment.post, comment],
+    method: :delete, class: "button", data: {confirm: "Are you sure?"} %>
+  </p>
 </div>
