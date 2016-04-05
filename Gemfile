@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug', '~> 8.2', '>= 8.2.2'
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
 
