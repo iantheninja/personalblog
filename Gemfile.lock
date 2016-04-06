@@ -49,6 +49,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     debug_inspector (0.0.2)
+    disqus_rails (0.0.6)
     erubis (2.7.0)
     execjs (2.6.0)
     globalid (0.3.6)
@@ -148,6 +149,7 @@ PLATFORMS
 DEPENDENCIES
   byebug (~> 8.2, >= 8.2.2)
   coffee-rails (~> 4.1.0)
+  disqus_rails
   jbuilder (~> 2.0)
   jquery-rails
   pg (= 0.17.1)
