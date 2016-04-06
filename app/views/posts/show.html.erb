@@ -11,7 +11,7 @@
   <p class="body">
       <%= @post.body %>
   </p>
-  <div class="comments"><!--shows the number of comments in show page-->
-    
+  <div class="comments"><!--generates disqus comments-->
+    <%= render 'disqus' %>
   </div>
 </div>
