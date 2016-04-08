@@ -9,6 +9,9 @@
     | <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
   </p>
   <p class="body">
+      <%= @post.image %>
+  </p>
+  <p class="body">
       <%= @post.body %>
   </p>
   <div class="comments"><!--generates disqus comments-->
