@@ -14,15 +14,15 @@
   <% end %>
   <p>
     <%= f.label :title %><br>
-    <%= f.text_field :title, class: 'form-control'%>
+    <%= f.trix_editor :title, class: 'form-control'%>
   </p>
   <p>
     <%= f.label :image %><br>
-    <%= f.file_field :image, class: 'form-control' %>
+    <%= f.file_field :image,as: :trix_editor, class: 'form-control' %>
   </p>
   <p>
     <%= f.label :body %><br>
-    <%= f.text_area :body, class: 'form-control' %>
+    <%= f.trix_editor :body, as: :trix_editor, class: 'form-control' %>
   </p>
   <p>
     <%= f.submit %>
