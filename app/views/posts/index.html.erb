@@ -1,8 +1,10 @@
 <div class="container">
 <% @posts.each do |post| %>
   <div class="post_wrapper col-md-3">
-    <h3 class="title"><%= link_to truncate(post.title, length: 25), post %></h3><br>
-    <h5 class="body-text"><%= truncate(post.body, length: 40) %></h5>
+    <h3 class="title"><%= link_to truncate(sanitize post.title, length: 25), post %></h3><br>
+    <h5 class="body-text"><%= sanitize(truncate(post.body, length: 40)) %></h5>
+
+    <!-- <h5 class="body-text"><%= truncate(post.body, length: 40) %></h5> -->
     <p class="date"><%= post.created_at.strftime("%B, %d, %Y")%></p>
   </div>
 <% end %>

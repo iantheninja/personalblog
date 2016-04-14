@@ -106,12 +106,16 @@
     clear: both;
  }
 
- #main_content {
- 	margin-left: 250px;
+ #content {
  	#header {
  		padding: 1em 3em;
  		border-bottom: 1px solid #d6dce0;
- 		background: #CDDC39;
+ 		background-color: #808080;
+    background: no-repeat center center;
+    webkit-background-size: cover;
+    moz-background-size: cover;
+    background-size: cover;
+    margin-bottom: 50px;
  		color: #9eafba;
  		p {
  			display: inline;
