@@ -6,12 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <!-- <div id="sidebar" class="col-md-2">
-    <p class="sign_in">Admin login</p>
-  </div> -->
+<body class="content container">
+  <div id="sidebar" class="col-md-2">
+    <img class="circle-tag" />
+    <!-- <p class="sign_in">Admin login</p> -->
+  </div>
   <div id="content">
-    <div id="header" class="col-md-12 col-lg-12 col-sm-12">
+    <div id="header" class="col-md-10 col-lg-10 col-sm-12">
 
       <%= link_to "My Rumblings", posts_path %> <!-- at the top of the page -->
 
