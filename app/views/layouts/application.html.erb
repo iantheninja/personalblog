@@ -6,21 +6,21 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="content container">
-  <div id="sidebar" class="col-md-2">
+<body class="content">
+  <div id="sidebar" class="col-md-3">
     <img class="circle-tag" />
     <!-- <p class="sign_in">Admin login</p> -->
   </div>
-  <div id="content">
-    <div id="header" class="col-md-10 col-lg-10 col-sm-12">
+  <div id="content" class="col-md-9 col-md-offset-2">
+    <div id="header">
 
       <%= link_to "My Rumblings", posts_path %> <!-- at the top of the page -->
 
       <div class="buttons"> <!--for the buttons at the top of page-->
-        <button class="button"> <!-- redirects to new posts page -->
+        <button class="btn btn-primary"> <!-- redirects to new posts page -->
           <%= link_to "New Post", new_post_path %>
         </button>
-        <button class="button">
+        <button class="btn btn-primary">
           Log Out
         </button>
       </div> <!--button class ends-->
