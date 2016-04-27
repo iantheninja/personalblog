@@ -14,6 +14,9 @@
   <p class="body">
       <%= sanitize @post.body %>
   </p>
+  <div id="social">
+    <%= social_share_button_tag("My Site") %>
+  </div>
   <div class="comments"><!--generates disqus comments-->
     <%= render 'disqus' %>
   </div>
