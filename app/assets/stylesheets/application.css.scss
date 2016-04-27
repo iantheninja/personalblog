@@ -25,6 +25,7 @@
 
  html, body {
  	font-family: 'Raleway', sans-serif;
+  background-color: #95a5a6;
  }
 
  h1, h2, h3, h4, h5, h6 {
@@ -162,7 +163,7 @@
   	left: 0;
   	top: 0;
   	height: 100%;
-  	background: #2196F3;
+  	background: #FFFFFF;
   	padding: 7em 0 0 0;
   	border-right: 1px solid #d6dce0;
   	#logo {
@@ -191,7 +192,6 @@
        padding: 1em 3em;
        border-bottom: 1px solid #d6dce0;
        background-color: #808080;
-       background: url(typewriter.jpg) no-repeat center center;
        webkit-background-size: cover;
        moz-background-size: cover;
        background-size: cover;
@@ -270,4 +270,16 @@
  		}
  	}
 }//closes post_content
+}
+#dev-name{
+  color: #000000;
+  margin-left: 50px;
+
+}
+#job-title{
+  margin-left: 35px;
+  color: #000000;
+}
+#breathing-space{
+
 }
