@@ -13,16 +13,21 @@ gem 'trix'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'social-share-button', '~> 0.1.6'
+gem 'puma'
+gem 'pg',             '0.17.1'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
