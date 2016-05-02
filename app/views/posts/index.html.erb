@@ -15,25 +15,39 @@
 <div class="row" id="rowbutton">
   <div class="container">
     <div class="row row-center">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <h3 class="text-center vcenter">
+            Logged in as Admin <!--to be replaced with admin login credentials-->
+          </h3>
+        </div>
+        <div class="col-sm-6">
+          <img class="circular" alt="avatar" />
+          <button class="btn">Sign out</button>
+        </div>
+      </div>
 
     </div>
   </div>
 </div>
+<br>
+
+<!-- BLOG SECTION -->
+<div class="row">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h4 class="panel-title"><%= link_to sanitize(post.title, :tags=>[]).truncate(50, :separator=>" ").html_safe, post %></h4>
+          <h6 class="panel-title myfont"><%= post.created_at.strftime("%B, %d, %Y")%></h6>
+        </div>
+        <h5 class="panel-body">
+          <%= sanitize(post.body, :tags=>[]).truncate(50, :separator=>"").html_safe%>
+        </h5>
 
 
-
-
-
-
-
-<div id="container">
-<% @posts.each do |post| %>
-  <div class="post_wrapper centered-text">
-    <h3 class="title"><%= link_to truncate(sanitize post.title, length: 25), post %></h3><br>
-    <h5 class="body-text"><%= sanitize(truncate(post.body, length: 40)) %></h5>
-
-    <!-- <h5 class="body-text"><%= truncate(post.body, length: 40) %></h5> -->
-    <p class="date"><%= post.created_at.strftime("%B, %d, %Y")%></p>
+      </div>
+    <% end %>
   </div>
-<% end %>
+
 </div>
