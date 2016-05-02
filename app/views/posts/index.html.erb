@@ -1,4 +1,32 @@
-<div class="container">
+<!-- big image at top of blog -->
+<div id="bannerimg">
+  <div id="header" class="vcenter">
+    <div class="logo">
+      <img src="/assets/logo.png" />
+    </div>
+    <h1 id="blog" class="text-center">
+      <font color="#ffffff">BLOG</font>
+    </h1>
+  </div>
+</div>
+<br>
+
+<!-- login and post button -->
+<div class="row" id="rowbutton">
+  <div class="container">
+    <div class="row row-center">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="container">
 <% @posts.each do |post| %>
   <div class="post_wrapper centered-text">
     <h3 class="title"><%= link_to truncate(sanitize post.title, length: 25), post %></h3><br>

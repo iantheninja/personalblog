@@ -22,267 +22,60 @@
  @import "smallscreen" only screen and (max-width: 480px);
 
 
+
+/***** custom font ***************/
+@font-face{
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-style: normal;
+  src: url();
+}
+
  /***********************    html elements    ***********************/
 
- html, body {
- 	font-family: 'Raleway', sans-serif;
-  background-color: #95a5a6;
- }
-
- h1, h2, h3, h4, h5, h6 {
- 	font-weight: 500;
- }
-
- a {
- 	text-decoration: none;
- 	color: inherit;
-  &:hover {
-    color: #33acb7;
-    text-decoration: none;
-  }
- }
-
-
-
- 	ul {
- 		list-style: none;
- 		text-align: right;
- 		padding-right: 3em;
- 		.category {
- 			font-weight: 700;
- 			font-size: 0.7em;
- 			text-transform: uppercase;
- 			color: #33acb7;
- 		}
- 		li {
- 			padding: .5em 0;
- 			a {
- 				color: #9eafba;
- 				text-decoration: none;
- 				transition: all .4s ease;
- 				&:hover {
- 					color: #33acb7;
- 				}
- 			}
- 		}
- 		.active {
- 			a {
- 				color: #33acb7;
- 			}
- 		}
- 	}
- 	.sign_in {
- 		position: absolute;
- 		right: 3em;
- 		top: 80%;
- 		font-size: .8em;
- 		color: #9eafba;
- 	}
 
 
   /***********************    html classes   *************************/
-//circular avatar in sidebar
- .circle-tag {
-    display: block;
-    width: 160px;
-    height: 160px;
-    background: #E6E7ED;
-    margin-left: 50px;
-    -moz-border-radius: 80px;
-    -webkit-border-radius: 80px;
-    background-image: url(avatar.jpg);
-    background-position:50% 50%;
-    background-size: contain;
-    background-repeat:no-repeat;
+  .logo{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.vcenter{  //aligns the blog text at the vertical center
+  display: inline-block;
+  vertical-align: middle;
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
- .post_wrapper {
-   padding: 3em;
-   margin-top: 5px;
-   background: #FFFFFF;
-   border-bottom: 1px solid #d6dce0;
-   .title {
-     margin: 0;
-     a {
-       font-weight: 500;
-       text-decoration: none;
-       color: #2a2f35;
-       font-size: 1.5em;
-       &:hover {
-         color: #33acb7;
-       }
-     }
-   }
-   .date_and_author {
-     color: #9eafba;
-     margin: .5em 0 0 0;
-   }
- }
 
-//for every button on the website
- .button {
- 	outline: none;
- 	background: transparent;
- 	border: 1px solid #d6dce0;
- 	padding: .5em 1.5em;
- 	border-radius: 1.5em;
- 	&:hover {
- 		border: 1px solid #33acb7;
- 		color: #33acb7;
- 		a {
- 			color: #33acb7 !important;
- 		}
- 	}
- }
-
-//for displaying stuff stacked one after another pseudoelement
- .clearfix:after {
-    content: ".";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
- }
-
- .body {
-    font-size: 1.1em;
-    line-height: 1.75;
-  }
-  .date_and_author {
-    color: #9eafba;
-    margin: .5em 0 2em 0;
-  }
-  .links {
- 		margin: 2em 0;
- 	}
-
-
-  /***********************    html ids    ***********************/
-
-  //sidebar with developer avatar
-  #sidebar {
-  	width: 250px;
-  	position: fixed;
-  	left: 0;
-  	top: 0;
-  	height: 100%;
-  	background: #FFFFFF;
-  	padding: 7em 0 0 0;
-  	border-right: 1px solid #d6dce0;
-  	#logo {
-  		width: 40px;
-  		position: absolute;
-  		right: 3em;
-  		top: 3em;
-  	}
-
-//for the show page - how the posts will be displayed
- 	#post_content {
- 		padding: 1em 3em;
- 		.title {
- 			font-weight: 500;
- 			text-decoration: none;
- 			color: #2a2f35;
- 			font-size: 2.5em;
- 			margin-bottom: 0;
- 		}
-    #centered-text{
-        margin-left: 100px;
-        background: #000;
-    }
-    #content {
-     #header {
-       padding: 1em 3em;
-       border-bottom: 1px solid #d6dce0;
-       background-color: #808080;
-       webkit-background-size: cover;
-       moz-background-size: cover;
-       background-size: cover;
-       margin-bottom: 50px;
-       color: #9eafba;
-       p {
-         display: inline;
-       }
-       a {
-         color: #9eafba;
-         text-decoration: none;
-       }
-       .buttons {
-         float: right;
-         margin-top: -6px;
-         .button {
-           font-size: .8em;
-           margin-left: .5em;
-         }
-       }
-     }
- 	}
-
- 	#page_wrapper {
- 		padding: 3em;
- 		#profile_image {
- 			width: 300px;
- 			float: left;
- 			margin-right: 2em;
- 			img {
- 				width: 100%;
- 				border-radius: 0.35em;
- 			}
- 		}
- 		#content {
- 			h1 {
- 				font-weight: 500;
- 			}
- 			p {
- 				font-size: 1.1em;
- 				line-height: 1.75;
- 			}
- 			a {
- 				color: #33acb7;
- 				font-weight: 700;
- 				text-decoration: none;
- 			}
- 		}
- 	}
-
- 	input[type="text"], input[type="email"], input[type="password"], textarea {
- 		width: 90%;
- 		border: 1px solid #d6dce0;
- 		border-radius: .35em;
- 		margin-top: 10px;
- 		padding: .5em 1em;
- 		line-height: 1.75;
- 	}
- 	input[type="text"] {
- 		height: 35px;
- 	}
- 	textarea {
- 		min-height: 180px;
- 	}
- 	input[type="submit"] {
- 		outline: none;
- 		background: transparent;
- 		border: 1px solid #d6dce0;
- 		padding: .5em 1.5em;
- 		font-size: 1.1em;
- 		border-radius: 1.5em;
- 		margin-left: .5em;
- 		&:hover {
- 			border: 1px solid #33acb7;
- 			color: #33acb7;
- 		}
- 	}
-}//closes post_content
+  /***********************    html ids   *************************/
+#bannerimg{
+  height: 400px;
+  width: 100%;
+  background: url("/assets/typewriter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  font-family: 'Merriweather';
 }
-#dev-name{
-  color: #000000;
-  margin-left: 50px;
-
+#header{
+  height: inherit;
+  width: inherit;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: absolute;
 }
-#job-title{
-  margin-left: 35px;
-  color: #000000;
-}
-#breathing-space{
-
+#rowbutton{
+  width: 100%;
+  margin:0 auto;
 }

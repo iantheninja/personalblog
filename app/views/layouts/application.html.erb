@@ -6,37 +6,31 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="content">
+<body id="bd">
   <!-- modify blog to look like this https://station.locomotive.works/_app/itchy-summer-4354/preview  -->
-  <div id="sidebar" class="col-md-3">
-    <img class="circle-tag" />
+  <!-- font to use https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600 -->
+  <div id="main-content">
+    <%= yield %>
+    <!-- <img class="circle-tag" />
     <h2 id="dev-name">Ian Munene</h2>
-    <h3 id="job-title">Software Engineer</h3>
+    <h3 id="job-title">Software Engineer</h3> -->
     <!-- <p class="sign_in">Admin login</p> -->
   </div>
-  <div id="breathing-space" class="col-md-1">
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-8 clearfix">
+          <p class="myfont text-center">
+            Copyright
+            &copy;
+            2015 Ian Munene 
+          </p>
+        </div>
 
-  </div>
-  <div id="content" class="col-md-8 col-md-offset-1">
-    <div id="header">
+      </div>
 
-      <%= link_to "My Rumblings", posts_path %> <!-- at the top of the page -->
-
-      <div class="buttons"> <!--for the buttons at the top of page-->
-        <button class="btn btn-primary"> <!-- redirects to new posts page -->
-          <%= link_to "New Post", new_post_path %>
-        </button>
-        <button class="btn btn-primary">
-          Log Out
-        </button>
-      </div> <!--button class ends-->
-    </div><!--header ends -->
-
-    <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: "alert") %>
-    <% end %>
-    <%= yield %>
-  </div><!--main content class ends -->
+    </div>
+  </footer>
 
 
 </body>
