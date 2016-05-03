@@ -44,10 +44,9 @@
         <h5 class="panel-body">
           <%= sanitize(post.body, :tags=>[]).truncate(50, :separator=>"").html_safe%>
         </h5>
-
-
       </div>
     <% end %>
+    <%= paginate @posts %>
   </div>
 
 </div>

@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'social-share-button', '~> 0.1.6'
 gem 'puma'
 gem 'pg',             '0.17.1'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
