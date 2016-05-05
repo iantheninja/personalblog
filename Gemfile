@@ -16,6 +16,7 @@ gem 'social-share-button', '~> 0.1.6'
 gem 'puma'
 gem 'pg',             '0.17.1'
 gem 'kaminari'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
