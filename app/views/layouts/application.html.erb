@@ -2,20 +2,17 @@
 <html>
 <head>
   <title>Personalblog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body id="bd">
   <!-- modify blog to look like this https://station.locomotive.works/_app/itchy-summer-4354/preview  -->
   <!-- font to use https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600 -->
-  <div id="main-content">
+  <div class="main-content">
     <%= yield %>
-    <!-- <img class="circle-tag" />
-    <h2 id="dev-name">Ian Munene</h2>
-    <h3 id="job-title">Software Engineer</h3> -->
-    <!-- <p class="sign_in">Admin login</p> -->
   </div>
+
   <footer id="footer">
     <div class="container-fluid">
       <div class="row">
@@ -23,15 +20,11 @@
           <p class="myfont text-center">
             Copyright
             &copy;
-            2015 Ian Munene 
+            2015 Ian Munene
           </p>
         </div>
-
       </div>
-
     </div>
   </footer>
-
-
 </body>
 </html>

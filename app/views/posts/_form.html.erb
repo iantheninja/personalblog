@@ -1,31 +1,38 @@
- <%= form_for @post do |f| %>
-  <% if @post.errors.any? %>
-    <div id="errors">
-      <h2><%= pluralize(@post.errors.count, "error")%> prevented this post from saving</h2>
-      <!--shows the total number of errors -->
-      <ul>
-        <% @post.errors.full_messages.each do |error| %>
-          <li>
-            <%= error %><!--displays each error message in a ul tag-->
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.trix_editor :title, class: 'form-control'%>
-  </p>
-  <p>
-    <%= f.label :image %><br>
-    <%= f.file_field :image,as: :trix_editor, class: 'form-control' %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.trix_editor :body, as: :trix_editor, class: 'form-control' %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+<div class="col-md-8 col-md-offset-2">
+  <%= form_for @post do |f| %>
+   <% if @post.errors.any? %>
+     <div id="errors" class="container center-text">
+       <h2><%= pluralize(@post.errors.count, "error")%> prevented this post from saving</h2>
+       <!--shows the total number of errors -->
+       <ul>
+         <% @post.errors.full_messages.each do |error| %>
+           <li>
+             <%= error %><!--displays each error message in a ul tag-->
+           </li>
+         <% end %>
+       </ul>
+     </div>
+   <% end %>
+
+
+  <div class="col-md-12">
+    <p>
+      <%= f.label :title, class: "myfont h4" %><br>
+      <%= f.trix_editor :title, class: 'form-control'%>
+    </p>
+    <p>
+      <%= f.label :image %><br>
+      <%= f.file_field :image,as: :trix_editor, class: 'form-control' %>
+    </p>
+    <p>
+      <%= f.label :body, class: "myfont h4" %><br>
+      <%= f.trix_editor :body, as: :trix_editor, class: 'form-control' %>
+    </p>
+    <p>
+      <%= f.submit 'Pubish Post', class: "btn btn-success btn-lg text-right" %>
+    </p>
+
+  </div>
 
 <% end %>
+</div>
