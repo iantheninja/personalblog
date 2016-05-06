@@ -22,7 +22,7 @@
  @import "smallscreen" only screen and (max-width: 480px);
 
 
-
+$black-color: 000000;
 /***** custom font ***************/
 @font-face{
   font-family: 'Merriweather', serif;
@@ -77,6 +77,19 @@
   background-image: url('/assets/avatar.jpg');
   background-size: cover;
 }
+//the dark shade above the background image
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.overlayover{
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC) repeat;
+}
 
   /***********************    html ids   *************************/
 #header{
@@ -84,7 +97,7 @@
   width: inherit;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
   position: absolute;
 }
 #rowbutton{
