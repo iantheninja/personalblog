@@ -1,26 +1,29 @@
 <!-- big image at top of blog -->
-<div class="bannerimg">
+<div class="bannerimg overlay">
   <div id="header" class="vcenter">
     <div class="logo">
       <img src="/assets/logo.png" />
     </div>
     <h1 id="blog" class="text-center">
-      <font color="#ffffff">BLOG</font>
+      <font color="#ffffff">BLOG</font><br>
+      <div class="avatar">
+      </div>
     </h1>
   </div>
 </div>
 <br>
 
-<!-- login and post button -->
+<!-- search bar  -->
 <div class="row" id="rowbutton">
   <div class="container">
     <div class="row row-center">
       <div class="row">
         <div class="col-sm-6 text-center">
           <h3 class="text-center vcenter">
-            Logged in as Admin <!--to be replaced with admin login credentials-->
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
+            <div class="alert alert-danger" role="alert">
+              <p class="notice"><%= notice %></p>
+              <p class="alert alert-danger"><%= alert %></p>
+            </div>
           </h3>
         </div>
         <div class="col-sm-6">
@@ -35,7 +38,6 @@
 <br>
 
 <!-- BLOG SECTION -->
-<div class="row">
   <div class="container">
     <% @posts.each do |post| %>
       <div class="panel panel-default text-center">
@@ -50,5 +52,3 @@
     <% end %>
     <%= paginate @posts %>
   </div>
-
-</div>

@@ -64,11 +64,19 @@
   background: url("/assets/typewriter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   font-family: 'Merriweather';
 }
-
+.avatar{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/assets/avatar.jpg');
+  background-size: cover;
+}
 
   /***********************    html ids   *************************/
 #header{
