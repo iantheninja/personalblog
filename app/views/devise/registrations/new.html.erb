@@ -5,10 +5,13 @@
     <%= devise_error_messages! %>
 
     <div class="field">
+      <%= f.label :username, class: 'myfont h4' %><br />
+      <%= f.text_field :username, autofocus: true, class: 'form-control' %>
+    </div>
+    <div class="field">
       <%= f.label :email, class: 'myfont h4' %><br />
       <%= f.email_field :email, autofocus: true, class: 'form-control' %>
     </div>
-
     <div class="field">
       <%= f.label :password, class: 'myfont h4' %>
       <% if @minimum_password_length %>
