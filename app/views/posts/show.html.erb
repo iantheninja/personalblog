@@ -1,5 +1,5 @@
 <!--shows each post-->
-<div id="post_content">
+<div id="post_content" class="container">
   <h1 class="title">
     <%= sanitize @post.title %>
   </h1>
@@ -13,6 +13,8 @@
   </p>
   <p class="body">
       <%= sanitize @post.body %>
+  </p>
+  <p>
   </p>
   <div id="social">
     <%= social_share_button_tag("My Site") %>
