@@ -61,7 +61,7 @@ $black-color: 000000;
 .bannerimg{
   height: 400px;
   width: 100%;
-  background: url("http://cdn.magdeleine.co/wp-content/uploads/2016/03/2a7b0328c7e8c6f1b512f4526683df5f-1400x2100.jpg");
+  background: url("https://pixabay.com/static/uploads/photo/2016/03/26/13/09/organic-1280537_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -74,7 +74,7 @@ $black-color: 000000;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('avatar.jpg');
+  background-image: url('http://moringaschool.com/assets/instructors/Ian.jpg');
   background-size: cover;
 }
 //the dark shade above the background image
@@ -132,7 +132,7 @@ $black-color: 000000;
   left: 0;
   height: 70px;
   background: #777;
-  position: relative;
+  position: fixed;
 }
 
 #footer p{
