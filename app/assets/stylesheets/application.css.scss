@@ -40,13 +40,13 @@ $black-color: 000000;
 
 
   /***********************    html classes   *************************/
-.logo{
-    width: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-}
+// .logo{
+//     width: 100px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding: 20px;
+// }
 .vcenter{  //aligns the blog text at the vertical center
   display: inline-block;
   vertical-align: middle;
@@ -90,7 +90,12 @@ $black-color: 000000;
   z-index: 3;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC) repeat;
 }
-
+.titletext{
+  color: #ffffff;
+}
+.minitext{
+  font-size: 6px;
+}
   /***********************    html ids   *************************/
 #header{
   height: inherit;
