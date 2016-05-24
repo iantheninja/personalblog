@@ -32,11 +32,12 @@ $black-color: 000000;
 }
 
  /***********************    html elements    ***********************/
- html, body {
+ html, body{
  	margin:0;
  	padding:0;
  	height:100%;
  }
+
 
 
   /***********************    html classes   *************************/
@@ -47,6 +48,9 @@ $black-color: 000000;
 //     left: 0;
 //     padding: 20px;
 // }
+.main-content{
+  min-height: 100%;
+}
 .vcenter{  //aligns the blog text at the vertical center
   display: inline-block;
   vertical-align: middle;
@@ -99,6 +103,12 @@ $black-color: 000000;
 
   /***********************    html ids   *************************/
 #wrapper{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+}
+#wrapper > div{
   position: relative;
 }
 #header{
@@ -108,6 +118,10 @@ $black-color: 000000;
   left: 0;
   z-index: 1;
   position: absolute;
+}
+#searchandcontent{
+  height: calc(100vh - 470px);
+  min-height: 300px;
 }
 #rowbutton{
   width: 100%;
@@ -136,7 +150,7 @@ $black-color: 000000;
   left: 0;
   height: 70px;
   background: #777;
-  position: absolute;
+  position: relative;
 }
 
 #footer p{
