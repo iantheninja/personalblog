@@ -7,24 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="bd">
-  <!-- modify blog to look like this https://station.locomotive.works/_app/itchy-summer-4354/preview  -->
-  <!-- font to use https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600 -->
-  <div class="main-content">
-    <%= yield %>
-  </div>
+  <div id="wrapper">
 
-  <footer id="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-8 clearfix">
-          <p class="myfont text-center">
-            Copyright
-            &copy;
-            2015 Ian Munene
-          </p>
+    <!-- modify blog to look like this https://station.locomotive.works/_app/itchy-summer-4354/preview  -->
+    <!-- font to use https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600 -->
+    <div class="main-content">
+      <%= yield %>
+
+      </div>
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-8 dclearfix">
+            <p class="myfont text-center">
+              Copyright
+              &copy;
+              2015 Ian Munene
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
