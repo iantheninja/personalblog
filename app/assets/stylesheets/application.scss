@@ -33,9 +33,9 @@ $black-color: 000000;
 
  /***********************    html elements    ***********************/
  html, body {
- // 	margin:0;
- // 	padding:0;
- // 	height:100%;
+ 	margin:0;
+ 	padding:0;
+ 	height:100%;
  }
 
 
@@ -132,7 +132,7 @@ $black-color: 000000;
   left: 0;
   height: 70px;
   background: #777;
-  position: fixed;
+  position: relative;
 }
 
 #footer p{
