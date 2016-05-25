@@ -100,6 +100,9 @@ $black-color: 000000;
 .minitext{
   font-size: 6px;
 }
+.showcontent{
+  background-color: #f5f5f5;
+}
 
   /***********************    html ids   *************************/
 #wrapper{
@@ -143,6 +146,9 @@ $black-color: 000000;
       text-decoration: none;
     }
   }
+}
+#postcontent{
+  background-color: #ffffff;
 }
 #footer{
   width: 100% !important;

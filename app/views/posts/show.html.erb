@@ -1,25 +1,27 @@
 <!--shows each post-->
-<div id="post_content" class="container">
-  <h1 class="title">
-    <%= sanitize @post.title %>
-  </h1>
-  <p class="date">
-    Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-    | <%= link_to "Edit", edit_post_path(@post) %>
-    | <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
-  </p>
-  <p class="show_image">
-      <%= image_tag(@post.image.url(:medium)) %>
-  </p>
-  <p class="body">
-      <%= sanitize @post.body %>
-  </p>
-  <p>
-  </p>
-  <div id="social">
-    <%= social_share_button_tag("My Site") %>
-  </div>
-  <div class="comments"><!--generates disqus comments-->
-    <%= render 'disqus' %>
+<div class="showcontent">
+  <div id="postcontent" class="container">
+    <h1 class="posttitle">
+      <%= sanitize @post.title %>
+    </h1>
+    <p class="date">
+      Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+      | <%= link_to "Edit", edit_post_path(@post) %>
+      | <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
+    </p>
+    <p class="show_image">
+        <%= image_tag(@post.image.url(:medium)) %>
+    </p>
+    <p class="postbody">
+        <%= sanitize @post.body %>
+    </p>
+    <p>
+    </p>
+    <div id="social">
+      <%= social_share_button_tag("My Site") %>
+    </div>
+    <div class="comments"><!--generates disqus comments-->
+      <%= render 'disqus' %>
+    </div>
   </div>
 </div>
