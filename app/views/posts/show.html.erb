@@ -1,33 +1,36 @@
-<!--shows each post-->
-<div id="postcontent">
-  <div class="showbannerimg">
-    <div class="overlay">
-      <div class="overlayover">
-        <div id="header" class="vcenter">
-        </div>
+<!-- banner and post title -->
+<div class="showbannerimg">
+  <div class="overlay"> <!-- dark overlay over background-image -->
+    <div class="overlayover"><!--patterned overlay over dark overlay-->
+      <div id="header" class="vcenter">
+        <h1 class="posttitle">
+          <%= sanitize @post.title %>
+        </h1>
       </div>
     </div>
   </div>
-  <h1 class="posttitle">
-    <%= sanitize @post.title %>
-  </h1>
+</div>
+
+<!--shows each post-->
   <p class="date">
     Submitted <%= time_ago_in_words(@post.created_at) %> Ago
     | <%= link_to "Edit", edit_post_path(@post) %>
     | <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
   </p>
-  <p class="show_image">
-      <%= image_tag(@post.image.url(:medium)) %>
-  </p>
-  <p class="postbody">
-      <%= sanitize @post.body %>
-  </p>
-  <p>
-  </p>
-  <div id="social">
-    <%= social_share_button_tag("My Site") %>
+  <!-- post content is displayed here -->
+  <div class="container postcontent">
+    <p class="show-image">
+        <%= image_tag(@post.image.url(:medium)) %>
+    </p>
+    <p class="postbody">
+        <%= sanitize @post.body %>
+    </p>
+    <p>
+    </p>
+    <div id="social">
+      <%= social_share_button_tag("My Site") %>
+    </div>
+    <div class="comments"><!--generates disqus comments-->
+      <%= render 'disqus' %>
+    </div>
   </div>
-  <div class="comments"><!--generates disqus comments-->
-    <%= render 'disqus' %>
-  </div>
-</div>

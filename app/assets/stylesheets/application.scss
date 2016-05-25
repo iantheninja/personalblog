@@ -28,7 +28,7 @@ $black-color: 000000;
   font-family: 'Merriweather', serif;
   font-weight: normal;
   font-style: normal;
-  src: url();
+  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600");
 }
 
  /***********************    html elements    ***********************/
@@ -68,6 +68,8 @@ $black-color: 000000;
   background: url("https://pixabay.com/static/uploads/photo/2016/03/26/13/09/organic-1280537_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   position: relative;
   font-family: 'Merriweather';
 }
@@ -77,8 +79,11 @@ $black-color: 000000;
   background: url("https://assets.locomotive.works/sites/56fd1143a2f42217744a812d/theme/images/default-header-bg.jpg?1459425610");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  position:absolute;
   font-family: 'Merriweather';
+  margin-bottom: 20px;
 }
 .avatar{
   display: inline-block;
@@ -111,6 +116,23 @@ $black-color: 000000;
 }
 .showcontent{
   background-color: #f5f5f5;
+}
+.posttitle{
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  font-family: "Merriweather";
+}
+.postcontent{
+  margin-top: 400px;
+}
+.postcontent p{
+  text-align: center;
+}
+.show-image{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
   /***********************    html ids   *************************/
@@ -156,9 +178,7 @@ $black-color: 000000;
     }
   }
 }
-#postcontent{
-  background-color: #ffffff;
-}
+
 #footer{
   width: 100% !important;
   bottom: 0 !important;
