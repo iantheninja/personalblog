@@ -17,6 +17,7 @@ gem 'puma'
 gem 'pg',             '0.17.1'
 gem 'kaminari'
 gem 'devise'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
