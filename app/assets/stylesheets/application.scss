@@ -12,6 +12,7 @@
  *
 
  *= require trix
+ *= require font-awesome
  *= require social-share-button
  *= require_tree .
  *= require_self
@@ -20,7 +21,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "smallscreen" only screen and (max-width: 480px);
-
+ @import "font-awesome";
 
 $black-color: 000000;
 /***** custom font ***************/
