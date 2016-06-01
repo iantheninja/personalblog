@@ -22,22 +22,25 @@
 <br>
 
 <div id="searchandcontent">
-<!-- search bar  -->
+<!-- notification bar and search bar  -->
 <div class="row" id="rowbutton">
   <div class="container">
     <div class="row row-center">
       <div class="row">
         <div class="col-sm-12">
-          <% if notice || alert %>
-            <div class="alert alert-danger" role="alert">
+          <% if notice %>
+            <div class="notice" role="alert">
               <p class="notice"><%= notice %></p>
-              <p class="alert alert-danger"><%= alert %></p>
+            </div>
+            <% else %>
+            <div class="alert" role="alert">
+              <p class="alert"><%= alert %></p>
             </div>
           <% end %>
           <!-- search box for searching tags -->
           <div id="custom-search-input" class="col-sm-12">
               <div class="input-group">
-                  <input type="text" class="  search-query form-control" placeholder="Search Tags" />
+                  <input type="text" class="search-query form-control" placeholder="Search Tags" />
                   <span class="input-group-btn">
                       <button class="btn btn-danger" type="button">
                           <span class=" glyphicon glyphicon-search"></span>
