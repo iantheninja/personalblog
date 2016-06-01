@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @posts = Kaminari.paginate_array(@posts).page(params[:page]).per(5)
   end
   def new
-    @post = Post.new
+    @post = current_admin.posts.build
   end
 
   def create
