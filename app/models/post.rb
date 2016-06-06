@@ -17,4 +17,9 @@ class Post < ActiveRecord::Base
   def all_tags
     self.tags.map(&:name).join(", ")
   end
+
+  def checkusername(post)
+    self.admin = Admin.find(post.admin_id)
+    return admin.username
+
 end

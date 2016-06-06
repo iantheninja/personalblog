@@ -6,7 +6,7 @@
         <h1 class="posttitle">
           <%= sanitize @post.title %><br>
         </h1><br>
-        Created <%= time_ago_in_words(@post.created_at) %> Ago by <%=  %>
+        Created <%= time_ago_in_words(@post.created_at) %> Ago by <%= @post.checkusername(@post) %>
         <p class="date">
 
           | <%= link_to "Edit", edit_post_path(@post) %>
