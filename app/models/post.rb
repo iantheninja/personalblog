@@ -1,4 +1,4 @@
-class Post < ActiveRecord::Base
+  class Post < ActiveRecord::Base
   has_many  :taggings, dependent: :destroy
   has_many :tags, through: :taggings, dependent: :destroy
   belongs_to :admin
@@ -21,5 +21,5 @@ class Post < ActiveRecord::Base
   def checkusername(post)
     self.admin = Admin.find(post.admin_id)
     return admin.username
-
+  end
 end
