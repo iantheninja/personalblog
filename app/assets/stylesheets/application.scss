@@ -26,7 +26,7 @@
 $black-color: 000000;
 /***** custom font ***************/
 @font-face{
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: normal;
   font-style: normal;
   src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600");
@@ -42,13 +42,13 @@ $black-color: 000000;
 
 
   /***********************    html classes   *************************/
-// .logo{
-//     width: 100px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     padding: 20px;
-// }
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
 .main-content{
   min-height: 100%;
 }
@@ -72,7 +72,7 @@ $black-color: 000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   position: relative;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 .showbannerimg{
   height: 400px;
@@ -83,7 +83,7 @@ $black-color: 000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   position:absolute;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin-bottom: 20px;
 }
 .avatar{
@@ -135,6 +135,34 @@ $black-color: 000000;
   margin-right: auto;
   display: block;
 }
+.postbody{
+  font-family: "Merriweather";
+}
+
+
+/***********************    social icons   *************************/
+
+
+.social-share-button-facebook {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: image-url("social-share-button/facebook.png") no-repeat;
+}
+.social-share-button-twitter {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: image-url("social-share-button/twitter.png") no-repeat;
+
+}
+.social-share-button-google_plus {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: image-url("social-share-button/google_plus.png") no-repeat;
+}
+
 
   /***********************    html ids   *************************/
 #wrapper{
