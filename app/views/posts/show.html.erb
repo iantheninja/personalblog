@@ -6,11 +6,15 @@
         <h1 class="posttitle">
           <%= sanitize @post.title %><br>
         </h1><br>
-        Created <%= time_ago_in_words(@post.created_at) %> Ago by <%= @post.checkusername(@post) %>
-        <p class="date">
+        <h3 class="container posttitle">Created <%= time_ago_in_words(@post.created_at) %> Ago by <%= @post.checkusername(@post) %></h3>
+        <p class="posttitle container">
 
-          | <%= link_to "Edit", edit_post_path(@post) %>
-          | <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
+          <%= link_to edit_post_path(@post) do %>
+              <i class="fa fa-pencil-square-o fa-2x"></i>
+            <% end %> |
+          <%= link_to post_path(@post), method: :delete, data: {confirm: "Are you sure?" } do %>
+            <i class="fa fa-trash-o fa-2x"></i>
+          <% end %>
         </p>
       </div>
     </div>
