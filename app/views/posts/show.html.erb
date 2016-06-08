@@ -32,10 +32,10 @@
     <p class="show-image">
         <%= image_tag(@post.image.url(:medium)) %>
     </p>
-    <p class="postbody">
+    <div class="postbody">
         <%= sanitize @post.body %>
-    </p>
-    
+    </div>
+
     <div id="social">
       <%= social_share_button_tag("My Site") %>
     </div>

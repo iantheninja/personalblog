@@ -20,6 +20,7 @@ gem 'devise'
 gem "font-awesome-rails"
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
+gem 'google-webfonts-rails'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
