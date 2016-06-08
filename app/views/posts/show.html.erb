@@ -30,7 +30,7 @@
   <!-- post content is displayed here -->
   <div class="container postcontent">
     <p class="show-image">
-        <%= image_tag(@post.image.url(:medium)) %>
+        <%= image_tag @post.image.url if @post.image.file? %>
     </p>
     <div class="postbody">
         <%= sanitize @post.body %>
