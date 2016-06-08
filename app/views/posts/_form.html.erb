@@ -18,19 +18,19 @@
   <div class="col-md-12">
     <p>
       <%= f.label :title, class: 'myfont h4' %><br>
-      <%= f.trix_editor :title, class: 'form-control'%>
+      <%= f.trix_editor :title%>
     </p>
     <p>
       <%= f.label :image %><br>
-      <%= f.file_field :image,as: :trix_editor, class: 'form-control' %>
+      <%= f.file_field :image, class: 'form-control' %>
     </p>
     <p>
       <%= f.label :body, class: "myfont h4" %><br>
-      <%= f.trix_editor :body, as: :trix_editor, class: 'form-control' %>
+      <%= f.trix_editor :body %>
     </p>
     <p>
       <%= f.label :tags, class: "myfont h4" %><br>
-      <%= f.trix_editor :all_tags, as: :trix_editor, class: 'form-control', placeholder: "Tags separated by commas" %>
+      <%= f.trix_editor :all_tags, placeholder: "Tags separated by commas" %>
     </p>
     <p>
       <%= f.submit 'Pubish Post', class: "btn btn-success btn-lg text-right" %>
