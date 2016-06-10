@@ -8,7 +8,7 @@
         </h1><br>
         <h3 class="container posttitle">Created <%= time_ago_in_words(@post.created_at) %> Ago by <%= @post.checkusername(@post) %></h3>
         <p class="posttitle container">
-          <% if current_admin.username == "Username" %>
+          <% if current_admin %>
             <%= link_to edit_post_path(@post) do %>
                 <i class="fa fa-pencil-square-o fa-2x"></i>
               <% end %> |
