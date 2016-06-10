@@ -23,16 +23,6 @@
  @import "smallscreen" only screen and (max-width: 480px);
  @import "font-awesome";
 
-$black-color: 000000;
-/***** custom font ***************/
-// @font-face{
-//   font-family: "merriweather";
-//   src: url(font-path('merriweather-regular-webfont.woff')) format('woff');
-//   src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
  /***********************    html elements    ***********************/
  html, body{
  	margin:0;
@@ -144,6 +134,13 @@ $black-color: 000000;
   font-family: "Roboto Slab";
 }
 .panel-title{
+  font-family: "Roboto Slab";
+}
+.homelink{
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 5px;
+  color: #ffffff;
   font-family: "Roboto Slab";
 }
 
