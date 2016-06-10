@@ -64,7 +64,7 @@
           <h6 class="panel-title myfont"><%= post.created_at.strftime("%B, %d, %Y")%></h6>
         </div>
         <h5 class="panel-body">
-          <%= sanitize(post.body, :tags=>[]).truncate(50, :separator=>"").html_safe%>
+          <%= sanitize(post.body, :tags=>[]).truncate(70, :separator=>"").html_safe%>
         </h5>
       </div>
     <% end %>
