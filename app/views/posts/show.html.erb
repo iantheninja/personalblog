@@ -9,6 +9,7 @@
         <h1 class="posttitle">
           <%= sanitize @post.title %><br>
         </h1><br>
+        <h2>this is a demo of aliases</h2>
         <h3 class="container posttitle">Created <%= time_ago_in_words(@post.created_at) %> Ago by <%= @post.checkusername(@post) %></h3>
         <p class="posttitle container">
           <% if current_admin %>
