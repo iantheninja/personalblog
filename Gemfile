@@ -24,7 +24,6 @@ gem 'google-webfonts-rails'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
-  gem 'web-console', '~> 2.0', group: :development
   gem 'spring'
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
