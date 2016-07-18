@@ -120,24 +120,52 @@
 }
 .postcontent{
   margin-top: 400px;
-}
-.postcontent p{
-  text-align: center;
+  p {
+    text-align: center;
+  }
 }
 .show-image{
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.postbody{
+
+.postbody{//for postbody in show page
   font-family: "Roboto Slab";
   line-height: 2;
 }
-.panel-body{
-  font-family: "Roboto Slab";
+.post-content{
+  padding-left: 20%;
+  margin-bottom: 10px;
 }
-.panel-title{
+.post-title{//in index page
   font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 36px;
+  a:link{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+}
+.post-subtitle{
+  font-family: "Roboto Slab";
+  a:link{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+}
+.post-time{
+  color: gray;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+
 }
 .homelink{
   margin-left: 15px;

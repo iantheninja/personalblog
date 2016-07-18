@@ -58,7 +58,18 @@
 <!-- BLOG SECTION -->
   <div class="container">
     <% @posts.each do |post| %>
-      <div class="panel panel-default text-center">
+    <div class="row post-content">
+      <div class="post-title">
+        <%= link_to sanitize(post.title, :tags=>[]).truncate(50, :separator=>" ").html_safe, post %>
+      </div>
+      <div class="post-subtitle">
+        <h4><%= link_to sanitize(post.body, :tags=>[]).truncate(70, :separator=>"").html_safe, post %></h4>
+      </div>
+      <div class="post-time">
+        <h5>Created on <%= post.created_at.strftime("%B, %d, %Y")%></h5>
+      </div>
+    </div>
+      <!-- <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h4 class="panel-title"><%= link_to sanitize(post.title, :tags=>[]).truncate(50, :separator=>" ").html_safe, post %></h4>
           <h6 class="panel-title myfont"><%= post.created_at.strftime("%B, %d, %Y")%></h6>
@@ -66,7 +77,7 @@
         <h5 class="panel-body">
           <%= sanitize(post.body, :tags=>[]).truncate(70, :separator=>"").html_safe%>
         </h5>
-      </div>
+      </div> -->
     <% end %>
     <%= paginate @posts %>
   </div>
