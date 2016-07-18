@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.3'
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
@@ -24,7 +24,6 @@ gem 'google-webfonts-rails'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
-  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'capistrano',         require: false
