@@ -2,7 +2,7 @@
 <div class="bannerimg">
   <div class="overlay">
     <div class="overlayover">
-      <div id="header" class="vcenter">
+      <div id="header">
         <h1 id="blog" class="text-center">
           <font color="#ffffff">blog</font><br>
           <div class="avatar">
@@ -21,21 +21,17 @@
 </div>
 <br>
 
-<div id="searchandcontent">
+<div id="searchandcontent" class="col-xs-10 col-xs-offset-1">
 <!-- notification bar and search bar  -->
 <div class="row" id="rowbutton">
   <div class="container">
     <div class="row row-center">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
           <% if notice %>
-            <div class="notice" role="alert">
               <p class="notice"><%= notice %></p>
-            </div>
             <% else %>
-            <div class="alert" role="alert">
               <p class="alert"><%= alert %></p>
-            </div>
           <% end %>
           <!-- search box for searching tags -->
           <div id="custom-search-input" class="col-sm-12">
@@ -58,7 +54,7 @@
 <!-- BLOG SECTION -->
   <div class="container">
     <% @posts.each do |post| %>
-      <div class="row post-content">
+      <div class="row post-content col-xs-10 col-xs-offset-1">
         <div class="post-title">
           <%= link_to sanitize(post.title, :tags=>[]).truncate(50, :separator=>" ").html_safe, post %>
         </div>

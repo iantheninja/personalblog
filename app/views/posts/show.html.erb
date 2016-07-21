@@ -2,9 +2,9 @@
 <div class="showbannerimg">
   <div class="overlay"> <!-- dark overlay over background-image -->
     <div class="overlayover"><!--patterned overlay over dark overlay-->
-      <div id="header" class="vcenter">
+      <div id="header" class="">
         <%= link_to posts_path do %>
-          <h4 class="homelink">HOME</h4>
+          <span class="homelink">HOME</span>
         <% end %>
         <h1 class="posttitle">
           <%= sanitize @post.title %><br>
