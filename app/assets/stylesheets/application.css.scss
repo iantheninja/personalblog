@@ -23,16 +23,6 @@
  @import "smallscreen" only screen and (max-width: 480px);
  @import "font-awesome";
 
-$black-color: 000000;
-/***** custom font ***************/
-// @font-face{
-//   font-family: "merriweather";
-//   src: url(font-path('merriweather-regular-webfont.woff')) format('woff');
-//   src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Merriweather:300,600");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
  /***********************    html elements    ***********************/
  html, body{
  	margin:0;
@@ -51,12 +41,15 @@ $black-color: 000000;
     padding: 20px;
 }
 .main-content{
-  min-height: 100%;
+  display: table;
+  width: 100%;
+  height: 100%;
+
 }
-.vcenter{  //aligns the blog text at the vertical center
-  display: inline-block;
-  vertical-align: middle;
-}
+// .vcenter{  //aligns the blog text at the vertical center
+//   display: inline-block;
+//   vertical-align: middle;
+// }
 .clearfix:after {
   content: ".";
   visibility: hidden;
@@ -127,26 +120,67 @@ $black-color: 000000;
 }
 .postcontent{
   margin-top: 400px;
-}
-.postcontent p{
-  text-align: center;
+  p {
+    text-align: center;
+  }
 }
 .show-image{
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.postbody{
+
+.postbody{//for postbody in show page
   font-family: "Roboto Slab";
   line-height: 2;
 }
-.panel-body{
+.post-content{
+  padding-left: 20%;
+  margin-bottom: 10px;
+  a:link{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #03A9F4;
+  }
+}
+.post-title{//in index page
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 36px;
+}
+.post-subtitle{
   font-family: "Roboto Slab";
 }
-.panel-title{
-  font-family: "Roboto Slab";
-}
+.post-time{
+  color: gray;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
 
+}
+.tagtitletext{
+  text-align:left;
+  color: #000000;
+  vertical-align: middle;
+  font-family: "Roboto Slab";
+}
+.homelink{
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 10px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto Slab";
+
+}
 /***********************    social icons   *************************/
 
 
@@ -172,30 +206,17 @@ $black-color: 000000;
 
 
   /***********************    html ids   *************************/
-#wrapper{
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  height: auto;
-}
-#wrapper > div{
-  position: relative;
-}
-#header{
-  height: inherit;
-  width: inherit;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  position: absolute;
-}
+// #header{
+//   height: inherit;
+//   width: inherit;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   position: absolute;
+// }
 #searchandcontent{
-  height: calc(100vh - 470px);
-  min-height: 300px;
-}
-#rowbutton{
-  width: 100%;
-  margin:0 auto;
+  margin-top: 10px;
+  height: auto;
 }
 #page_wrapper {
   padding: 3em;
@@ -217,11 +238,10 @@ $black-color: 000000;
 
 #footer{
   width: 100% !important;
-  bottom: 0 !important;
-  left: 0;
   height: 70px;
   background: #777;
   position: relative;
+
 }
 
 #footer p{
@@ -231,3 +251,4 @@ $black-color: 000000;
 #footer i{
   padding: 15px;
 }
+  /*********************** for small screens ********************/

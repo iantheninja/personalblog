@@ -2,7 +2,10 @@
 <div class="showbannerimg">
   <div class="overlay"> <!-- dark overlay over background-image -->
     <div class="overlayover"><!--patterned overlay over dark overlay-->
-      <div id="header" class="vcenter">
+      <div id="header" class="">
+        <%= link_to posts_path do %>
+          <span class="homelink">HOME</span>
+        <% end %>
         <h1 class="posttitle">
           <%= sanitize @post.title %><br>
         </h1><br>
@@ -16,7 +19,6 @@
               <i class="fa fa-trash-o fa-2x"></i>
             <% end %>
           <% end %>
-
         </p>
       </div>
     </div>
@@ -37,11 +39,19 @@
     <div class="postbody">
         <%= sanitize @post.body %>
     </div>
-
+    <!-- tags section from the tags model -->
+    <h3 class="tagtitletext">Tags</h3>
+    <div class="tags">
+      <%= @post.tags.map do |tag| %>
+        <%= sanitize tag.name %>
+      <% end %>
+    </div>
+<!-- Social share buttons section -->
     <div id="social">
       <%= social_share_button_tag("My Site") %>
     </div>
-    <div class="comments"><!--generates disqus comments-->
+    <!--generates disqus comments-->
+    <div class="comments">
       <%= render 'disqus' %>
     </div>
   </div>
