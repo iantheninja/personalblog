@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.3.1'
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
@@ -21,6 +21,7 @@ gem "font-awesome-rails"
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 gem 'google-webfonts-rails'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
