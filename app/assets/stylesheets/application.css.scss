@@ -44,7 +44,6 @@
   display: table;
   width: 100%;
   height: 100%;
-
 }
 // .vcenter{  //aligns the blog text at the vertical center
 //   display: inline-block;
@@ -67,6 +66,7 @@
   -moz-background-size: cover;
   position: relative;
   font-family: "Roboto Slab";
+  margin-top: -20px;
 }
 .showbannerimg{
   height: 400px;
