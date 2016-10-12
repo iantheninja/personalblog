@@ -26,12 +26,12 @@ gem 'foundation-rails'
 group :development, :test do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
   gem 'spring'
+end
+
+group :production do
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
-end
-
-group :production do
 end
