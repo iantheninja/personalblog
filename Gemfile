@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'trix'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'social-share-button', '~> 0.1.6'
 gem 'puma'
